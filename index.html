@@ -1,19 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-    	<meta charset="utf-8">
-    	<meta name="description" content="Your description goes here">
-    	<meta name="keywords" content="one, two, three">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		
-		<title>Blank Template</title>
 
-		<!-- external CSS link -->
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-	</head>
-	<body>
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Your description goes here">
+	<meta name="keywords" content="one, two, three">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<script type="text/javascript" src="js/main.js"></script>
-	</body>
+	<title>Random Color Generator | Red X</title>
+
+	<!-- external CSS link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<main class="flex-center">
+		<section class="container">
+			<section id="title">
+				<h1>Random<br />
+					Color<br />
+					Generator
+				</h1>
+			</section>
+
+			<section id="values" class="flex-center">
+				<div class="flex-center">
+					<span class="value--title">hex|</span>
+					<span id="hex" class="value">#FA515B</span>
+				</div>
+				<div class="flex-center">
+					<span class="value--title">rgb|</span>
+					<span id="hex" class="value">#FA515B</span>
+				</div>
+				<div class="flex-center">
+					<span class="value--title">hsl|</span>
+					<span id="hex" class="value">#FA515B</span>
+				</div>
+			</section>
+			<section id="button" class="flex-center">
+				<button class="btn--primary" type="button">switch it up!</button>
+			</section>
+		</section>
+	</main>
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+
 </html>
