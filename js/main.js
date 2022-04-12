@@ -7,8 +7,6 @@ function getRandomColor(){
 fetch("https://x-colors.herokuapp.com/api/random")
     .then(res => res.json()) // parse response as JSON
     .then(data => {
-      console.log(data)
-
       document.documentElement.style.setProperty('--primary-color', data.hex)
       document.getElementById('hex').innerHTML = data.hex
       document.getElementById('rgb').innerHTML = data.rgb
@@ -18,3 +16,5 @@ fetch("https://x-colors.herokuapp.com/api/random")
         console.log(`error ${err}`)
     })
 }
+
+// Copy color value text
