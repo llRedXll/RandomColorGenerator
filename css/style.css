@@ -45,7 +45,6 @@ h1 {
 
 main {
      height: 100vh;
-
 }
 
 .flex-center {
@@ -105,7 +104,7 @@ main {
 
 .value {
      font-size: 2.4rem;
-     padding: .6rem;
+     padding: .4rem;
 }
 
 .value:hover {
@@ -135,3 +134,29 @@ main {
 /******************************************
 /* Responsive
 /*******************************************/
+
+@media screen and (max-width: 1000px) {
+     html {
+          font-size: 55%;
+     }
+     .container {
+          /* flex-basis: 100rem; */
+          display: block;
+     }
+
+     #button {
+          height: 12rem;
+     }
+}
+
+@media screen and (max-width: 500px) {
+     #values {
+          padding: 10rem 5rem
+     }
+}
+
+@media screen and (max-width: 500px) {
+     #values {
+          padding: 10rem 2rem
+     }
+}
