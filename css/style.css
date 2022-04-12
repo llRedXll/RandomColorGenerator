@@ -107,9 +107,20 @@ main {
      padding: .4rem;
 }
 
-.value:hover {
-     background: var(--gray--light);
+/* show and hide copy icon */
+.hide {
+     opacity: 0;
 }
+
+div img {
+     height: 2rem;
+     transition: all 0.3s ease;
+}
+
+span.value:hover + .hide {
+     opacity: 100%;
+  
+   }
 
 .btn--primary {
      font-family: 'Space Mono', monospace;
@@ -124,11 +135,43 @@ main {
      transition: background .3s ease;
 }
 
-
-.btn--primary:hover {
+#title h1:hover {
      animation: background 4s linear infinite;
      background:var(--colorize);
      background-size:1000% 100%;
+}
+
+.btn--primary:hover {
+     cursor: pointer;
+     animation: background 4s linear infinite;
+     background:var(--colorize);
+     background-size:1000% 100%;
+}
+
+footer {
+     font-family: 'Space Mono', monospace;
+     color: white;
+     font-size: 1.2rem;
+     margin-top: -3rem;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+footer a{
+     text-decoration: none;
+     font-weight: 700;
+     color: var(--white);
+}
+
+footer a:hover {
+     cursor: pointer;
+     animation: background 4s linear infinite;
+     background:var(--colorize);
+     background-size:1000% 100%;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     
 }
 
 /******************************************
