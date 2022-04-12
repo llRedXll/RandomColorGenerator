@@ -62,7 +62,7 @@ main {
      flex-basis: 100rem;
      display: grid;
      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
+     grid-template-rows: 1fr 2fr;
      gap: 0px 0px;
      grid-template-areas:
           "title title title title title"
@@ -72,7 +72,6 @@ main {
 #title {
      background: var(--black);
      grid-area: title;
-
 }
 
 #values {
@@ -81,8 +80,12 @@ main {
      color: var(--gray--dark);
      grid-area: values;
      flex-direction: column;
-     row-gap: 2rem;
+     row-gap: 4rem;
+     padding:10rem
+}
 
+#values div {
+     align-self: flex-start;
 }
 
 #button {
