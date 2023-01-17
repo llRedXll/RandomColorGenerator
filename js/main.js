@@ -16,3 +16,28 @@ fetch("https://x-colors.herokuapp.com/api/random")
 }
 
 // Copy color value text
+const copyValue = (event) => {
+  const value = event.target.innerText;
+  const notification = event.target.nextElementSibling;
+  navigator.clipboard.writeText(value).then(() => {
+    notification.innerHTML = "Copied";
+    setTimeout(() => {
+      notification.innerHTML = "";
+    }, 2000);
+  });
+};
+
+const hexValue = document.querySelector('#hex');
+hexValue.addEventListener('click', (event) => {
+  copyValue(event);
+});
+
+const rgbValue = document.querySelector('#rgb');
+rgbValue.addEventListener('click', (event) => {
+  copyValue(event);
+});
+
+const hslValue = document.querySelector('#hsl');
+hslValue.addEventListener('click', (event) => {
+  copyValue(event);
+});
