@@ -15,3 +15,7 @@ The random color generator has the following features:
 * Generates random hex, rgb, and hsl color codes
 * Automatically generates a new color code every time you click the "switch it up!" button
 * Copy color codes to your clipboard by clicking the generated color values
+
+## Live Site
+
+The live site for this project can be found [here](https://llredxll.github.io/RandomColorGenerator/)
